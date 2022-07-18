@@ -1,7 +1,10 @@
 <?php
 
 /**
- * @var \Modules\FirstModule\Block\Display $block
+ * @var \Modules\FirstModule\ViewModel\NewViewModel $block
  */
 
-echo $block->sayHello();
+//echo $block->sayHello();
+
+$viewModel = $block->getViewModel();
+echo "<h1>".$viewModel->getTitle()."</h1>";
