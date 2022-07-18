@@ -6,9 +6,9 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
-    <router id="firstModule">
-        <route id="firstModule" frontName="test">
-            <module name="Modules_firstModule" />
+    <router id="standard">
+        <route id="test" frontName="test">
+            <module name="Modules_FirstModule" />
         </route>
     </router>
 </config>

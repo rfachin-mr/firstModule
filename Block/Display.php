@@ -1,9 +1,13 @@
 <?php
 
-namespace Modules\firstModule\Block;
-class Display extends \Magento\Framework\View\Element\Template
+namespace Modules\FirstModule\Block;
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
+
+class Display extends Template
 {
-    public function __construct(\Magento\Framework\View\Element\Template\Context $context)
+    public function __construct(Context $context)
     {
         parent::__construct($context);
     }
