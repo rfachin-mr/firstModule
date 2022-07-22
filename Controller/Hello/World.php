@@ -4,7 +4,7 @@
 // * See COPYING.txt for license details.
 // */
 //
-//namespace Modules\firstModule\Controller\Hello;
+//namespace Modules\FirstModule\Controller\Hello;
 //
 //use Magento\Framework\App\Action\Action;
 //use Magento\Framework\App\Action\Context;

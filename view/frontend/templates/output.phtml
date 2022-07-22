@@ -1,0 +1,28 @@
+<?php
+
+/** @var \Magento\Framework\View\Element\Template $block
+ * @var \Modules\FirstModule\ViewModel\NewViewModel $viewModel
+ */
+
+$viewModel = $block->getViewModel();
+$tablebody = $viewModel->getPeopleData();
+?>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Alive?</th>
+        <th>Face picture URL</th>
+        <th>created</th>
+        <th>updated</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <?= $tablebody;?>
+    </tr>
+    </tbody>
+</table>

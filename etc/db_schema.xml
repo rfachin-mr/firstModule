@@ -1,0 +1,16 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="xml_Module_FirstModule_people" engine="innodb" resource="default" comment="XML People Table">
+
+        <column xsi:type="int" name="person_id" identity="true" nullable="false" unsigned="true" comment="Person ID"/>
+        <column xsi:type="varchar" name="name" length="255" nullable="false" comment="Person Name"/>
+        <column xsi:type="varchar" name="person_position" length="255" comment="Person position"/>
+        <column xsi:type="boolean" name="alive" comment="Perrson Alive"/>
+        <column xsi:type="varchar" name="face_pic" length="255" comment="Person Picture"/>
+        <column xsi:type="timestamp" name="created_at" default="CURRENT_TIMESTAMP" nullable="false" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" default="CURRENT_TIMESTAMP" on_update="true" nullable="false" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="person_id"/>
+        </constraint>
+    </table>
+</schema>
