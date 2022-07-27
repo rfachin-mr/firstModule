@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="training_catalog_product" type="Modules\FirstModule\Plugin\NamePlugin" disabled="false"/>
+        <plugin name="training_catalog_price" type="Modules\FirstModule\Plugin\PricePlugin" disabled="false"/>
+    </type>
+</config>
